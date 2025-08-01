@@ -1,0 +1,83 @@
+/* ===============================
+   Pembukuan Page Placeholder UI
+=============================== */
+
+.pembukuan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.pembukuan-card {
+  background: linear-gradient(135deg, #1d1d1d, #262626);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: #eee;
+}
+
+.pembukuan-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4ab4f5;
+}
+
+.pembukuan-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.note {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.loader-bar {
+  margin: 1.5rem auto 1rem;
+  width: 80%;
+  height: 8px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-bar .progress {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, #4ab4f5, #50c2e5);
+  animation: loadingProgress 2s infinite ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes loadingProgress {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

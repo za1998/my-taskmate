@@ -1,25 +1,17 @@
-import "../style/Tentang.css";
+import PageWrapper from "../components/PageWrapper";
+import "../style/PageWrapper.css";
 
 export default function Tentang() {
   return (
-    <div className="tentang-container">
-      <h2>Tentang MyTaskMate</h2>
+    <PageWrapper title="Tentang Aplikasi">
       <p>
-        <strong>MyTaskMate</strong> adalah platform pribadi serbaguna yang dirancang
-        untuk membantu aktivitas digital harianmu. Aplikasi ini mencakup berbagai fitur:
+        <strong>MyTaskMate</strong> adalah aplikasi produktivitas all-in-one yang dirancang
+        untuk memudahkan manajemen tugas, pengelolaan file, downloader, dan banyak lagi.
       </p>
-      <ul>
-        <li>📥 Downloader video tanpa watermark (TikTok, Instagram, YouTube, dan X)</li>
-        <li>📁 Penyimpanan file pribadi</li>
-        <li>📊 Pembukuan harian</li>
-        <li>🎨 Portofolio proyek digital</li>
-        <li>📈 Statistik penggunaan</li>
-      </ul>
       <p>
-        Semua fitur dibangun dengan semangat efisiensi, responsif, dan mudah digunakan
-        di berbagai perangkat.
+        Proyek ini dibuat dengan <span style={{ color: "#4ab4f5" }}>React.js</span> oleh tim developer berdedikasi
+        untuk mendukung efisiensi kerja digital dengan antarmuka modern dan ringan.
       </p>
-      <p>Versi saat ini: <strong>v1.0</strong></p>
-    </div>
+    </PageWrapper>
   );
 }
