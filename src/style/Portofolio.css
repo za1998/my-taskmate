@@ -1,0 +1,83 @@
+/* ===============================
+   Portfolio Styling - Responsive
+================================= */
+
+.portfolio-container {
+  padding: 24px;
+}
+
+.portfolio-container h2 {
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Responsive Grid */
+.portfolio-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Card Styling */
+.portfolio-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+}
+
+.portfolio-card img.thumbnail {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+/* Card Content */
+.portfolio-card h3 {
+  margin: 16px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.portfolio-card p {
+  margin: 0 16px 12px;
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+/* Link */
+.portfolio-card a {
+  display: inline-block;
+  margin: 0 16px 16px;
+  color: #4ab4f5;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.portfolio-card a:hover {
+  text-decoration: underline;
+}
+
+/* Disabled link */
+.disabled-link {
+  color: #888;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Dark mode container (optional if not handled globally) */
+body, .dark-mode .portfolio-container {
+  background-color: #121212;
+}

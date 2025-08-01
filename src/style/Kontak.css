@@ -1,0 +1,29 @@
+.kontak-container {
+  padding: 32px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.kontak-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #4ab4f5;
+}
+
+.kontak-container ul {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.kontak-container li {
+  margin-bottom: 10px;
+}
+
+.kontak-container a {
+  color: #4ab4f5;
+  text-decoration: none;
+}
+
+.kontak-container a:hover {
+  text-decoration: underline;
+}

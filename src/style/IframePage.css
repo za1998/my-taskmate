@@ -1,0 +1,63 @@
+.iframe-container {
+  position: relative;
+  height: 90vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.iframe-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.iframe-loader {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ccc;
+  border-top-color: #4A90E2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+.iframe-page {
+  height: 100%;
+  position: relative;
+}
+
+.iframe-page iframe {
+  width: 100%;
+  height: 90vh;
+  border: none;
+  border-radius: 8px;
+}
+
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #aaa;
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

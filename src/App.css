@@ -1,0 +1,13 @@
+.main-content {
+  margin-left: 230px;
+  padding: 2rem;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px; /* kompensasi header */
+    padding: 1rem;
+  }
+}
