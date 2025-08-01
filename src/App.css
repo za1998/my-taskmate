@@ -1,30 +1,41 @@
+/* ==== Reset & Base ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: #0d0d0d;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ==== App Layout ==== */
 .app-container {
   display: flex;
   flex-direction: row;
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
+  background-color: #0d0d0d;
 }
 
-
+/* ==== Main Content ==== */
 .main-content {
   flex: 1;
   margin-left: 230px;
   padding: 2rem;
   transition: margin-left 0.3s ease-in-out;
+  overflow-y: auto;
 }
 
+/* ==== Responsive ==== */
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
     padding: 1rem;
     margin-top: 60px; /* memberi ruang untuk mobile header */
-  }
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    margin-top: 60px;
-    margin-left: 0;
   }
 }
