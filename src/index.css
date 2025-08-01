@@ -1,36 +1,40 @@
-body {
+/* ========== Global Reset ========== */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.dark-mode {
-  background-color: #1c1c1c;
-  color: white;
-}
-
-.dark-mode .sidebar {
-  background-color: #2c2c2c;
-}
-
-.dark-mode a {
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
   color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-size: 16px; /* pastikan tidak terlalu besar */
 }
 
-.dark-mode a:hover {
-  background-color: #444;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.spinner {
-  width: 24px;
-  height: 24px;
-  border: 4px solid #ccc;
-  border-top-color: #4A90E2;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+/* Scrollbar (opsional) */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Tambahan: Responsif padding untuk body */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px; /* kecilkan sedikit di mobile */
   }
 }

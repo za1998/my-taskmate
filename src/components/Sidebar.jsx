@@ -7,8 +7,6 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const toggleSidebar = () => setIsOpen(!isOpen);
-
   const navItems = [
     { name: "Beranda", path: "/" },
     { name: "Downloader", path: "/downloader" },
@@ -22,16 +20,17 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* MOBILE HEADER */}
+      {/* Mobile Header */}
       <div className="mobile-header">
-        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>☰</button>
-        <span className="mobile-title">MyTaskMate</span>
+        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
       </div>
 
-      {/* SIDEBAR */}
+      {/* Sidebar */}
       <aside className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar-header">
-          <img src={logo} alt="Logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
           <span className="logo-text">MyTaskMate</span>
         </div>
         <nav className="sidebar-nav">
