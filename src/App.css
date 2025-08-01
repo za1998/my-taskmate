@@ -21,3 +21,10 @@
     margin-top: 60px; /* memberi ruang untuk mobile header */
   }
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+}

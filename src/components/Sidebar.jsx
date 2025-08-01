@@ -20,12 +20,17 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Mobile Header */}
+      {/* Mobile Topbar */}
       <div className="mobile-header">
-        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          ☰
+        <button className="hamburger" onClick={() => setIsOpen(true)}>
+          &#9776;
         </button>
       </div>
+
+      {/* Mobile Backdrop Overlay */}
+      {isOpen && (
+        <div className="backdrop" onClick={() => setIsOpen(false)}></div>
+      )}
 
       {/* Sidebar */}
       <aside className={`sidebar ${isOpen ? "open" : ""}`}>
