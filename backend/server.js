@@ -20,7 +20,7 @@ app.post("/api/chat", async (req, res) => {
       headers: {
         "Authorization": `Bearer ${API_KEY}`,
         "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5173",  // WAJIB! Ganti dengan domain kamu saat produksi
+        "HTTP-Referer": "https://j0l5sptb.up.railway.app",  // WAJIB! Ganti dengan domain kamu saat produksi
         "User-Agent": "MyTaskMate/1.0"
       },
       body: JSON.stringify({
@@ -46,4 +46,9 @@ app.post("/api/chat", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`✅ OpenRouter Server running at http://localhost:${PORT}`));
+app.use(
+  cors({
+    origin: "https://j0l5sptb.up.railway.app", // atau "*" jika sementara
+    methods: ["POST"],
+  })
+);
